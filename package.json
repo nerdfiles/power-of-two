@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mkdir -p build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R assets/images/https/twitter.com/oliverjumpertz/status/* build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R src/* build"
   },
   "keywords": [],
   "author": "",
