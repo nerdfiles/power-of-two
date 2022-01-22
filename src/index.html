@@ -37,17 +37,17 @@
       <h2>solution</h2>
       <pre>
         <code class="A-function--isPowerOfTwo">
-          const isPowerOfTwo = (number, action) => ({
+          const isPowerOfTwo = (number, action) =&gt; ({
             const ERRORS = {
               "input.__error__": "https://httpstatuses.com/400"
             }
             const ACTIONS = {
-              "representer.__default__": (number) => number < 1 
+              "representer.__default__": (number) =&gt; number &lt; 1 
                 ? false 
                 : true
             }
-            const deduction = (input) => {
-              return (number & (number - 1)) === 0
+            const deduction = (input) =&gt; {
+              return (number &amp; (number - 1)) === 0
             }
 
             return deduction(ACTIONS[action]?.(number, action) ?? ERRORS["input.__error__"])
@@ -61,7 +61,7 @@
     </article>
   </div>
   <footer class="O-container--footer">
-    <p>curtesy of <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite dot com</a></p>
+    <p>curtesy of <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite dot com</a>. see <a href="https://github.com/nerdfiles/power-of-two">repo</a>. <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fvast-prison.surge.sh%2F">validate</a>.</p>
   </footer>
 </body>
 </html>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R assets/images/https/twitter.com/oliverjumpertz/status/* build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R src/* build"
+    "build": "mkdir -p build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R assets/images/https/twitter.com/oliverjumpertz/status/* build/assets/images/https/twitter.com/oliverjumpertz/status && cp -R src/* build",
+    "publish": "npm run build && cd build && surge . && cd .."
   },
   "keywords": [],
   "author": "",
