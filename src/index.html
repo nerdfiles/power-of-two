@@ -46,8 +46,8 @@
                 ? false 
                 : true
             }
-            const deduction = (input) =&gt; {
-              return (number &amp; (number - 1)) === 0
+            const deduction = (inputNumber) =&gt; {
+              return (inputNumber &amp; (inputNumber - 1)) === 0
             }
 
             return deduction(ACTIONS[action]?.(number, action) ?? ERRORS["input.__error__"])
